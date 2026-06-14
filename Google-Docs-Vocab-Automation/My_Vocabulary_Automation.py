@@ -53,7 +53,7 @@ def explain_phrasal_verb(state: PhrasalVerbState):
     response = get_clean_text(raw_response)
     return {'meaning': response}
 
-SHARED_DOC_ID = "14TMi5Z2muF7zaUSwhi1PTp58XOqk2dchlb1dZJJ8pAw"
+SHARED_DOC_ID = "your-google-doc-id"
 
 def save_to_google_doc_formatted(state: PhrasalVerbState):
     doc = docs_service.documents().get(documentId=SHARED_DOC_ID).execute()
